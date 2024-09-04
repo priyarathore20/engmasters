@@ -5,8 +5,8 @@ const IntroSection = () => {
   return (
     <div className="relative z-50 flex justify-between items-start gap-6 bg-bgGray px-24 pt-[60px] pb-8">
       {/*------Intro left part------- */}
-      <div className="flex-[0.4]">
-        <h2 className="font-medium text-[52px] text-orange uppercase leading-[56px]">
+      <div className="flex-[0.5]">
+        <h2 className="font-semibold text-[52px] text-orange uppercase leading-[56px]">
           English Speaking Institute in Tilak Nagar
         </h2>
         <h5 className="mt-[10px] mb-4 font-medium text-xl">
@@ -16,7 +16,7 @@ const IntroSection = () => {
         <div>
           <Button
             size="medium"
-            label={"Call For Consultation ->"}
+            label={"Call For Consultation >"}
             classname="bg-gradient-to-r from-yellow text-white to-orange"
           />
           <p className="mt-1 ml-5 text-xs">

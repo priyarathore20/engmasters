@@ -13,11 +13,8 @@ const benefitCards = [
 
 const BenefitSection = () => {
   return (
-    <div className="bg-bgGray px-24 w-full">
-      <div
-        className="bg-white p-7 rounded-xl w-full max-w-[900px]"
-        id="Benefits"
-      >
+        <div className="bg-bgGray scroll-m-24 px-24 w-full" id="Benefits">
+    <div className="bg-white p-7 rounded-xl w-full max-w-[900px]">
         <h2 className="font-semibold text-[40px] text-brown/55 text-center">
           Benefits You Will Gain
         </h2>

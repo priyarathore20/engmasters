@@ -14,6 +14,7 @@ module.exports = {
         bgGray: "#F2EFEA",
         brown: "#c77201",
         darkGray: "#586a92",
+        formPink: "#973751",
       },
     },
   },
