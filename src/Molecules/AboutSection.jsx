@@ -68,7 +68,7 @@ const AboutSection = () => {
             >
               <Image src={item?.href} alt="" width={50} height={50} />
               <div className="flex flex-col items-center bg-white">
-                <p className="mt-2 mb-1 w-full max-w-24 text-center">
+                <p className="mt-2 mb-1 w-full max-w-24 text-center text-textGray">
                   {item?.title}
                 </p>
                 <p className="text-orange">{item?.subtitle1}</p>

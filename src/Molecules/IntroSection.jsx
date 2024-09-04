@@ -3,8 +3,8 @@ import CountdownTimer from "@/Atoms/Timer";
 
 const IntroSection = () => {
   return (
-    <section className="bg-bgGray">
-      <div className="relative z-50 flex lg:flex-row flex-col justify-between items-center lg:items-start gap-6 pt-[30px] pb-8 section-container">
+    <section className="relative z-50 bg-bgGray">
+      <div className="flex lg:flex-row flex-col justify-between items-center lg:items-start gap-6 pt-[30px] pb-8 section-container">
         {/*------Intro left part------- */}
         <div className="flex flex-col flex-[0.5] max-lg:items-center">
           <h2 className="font-bold text-[52px] text-orange max-lg:text-center uppercase leading-[56px]">
@@ -20,7 +20,7 @@ const IntroSection = () => {
               label={"Call For Consultation >"}
               classname="bg-gradient-to-r from-yellow text-white to-orange"
             />
-            <p className="mt-1 ml-5 text-xs">
+            <p className="mt-1 ml-5 text-textGray text-xs">
               <b>1,00,000+</b> students enrolled till date
             </p>
           </div>
