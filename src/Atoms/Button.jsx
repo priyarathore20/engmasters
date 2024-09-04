@@ -6,7 +6,7 @@ const Button = ({ label, size = "small", classname }) => {
     <button
       className={classNames(`rounded-full text-[17px] ${classname}`, {
         "px-10 py-[10px]": size === "small",
-        "px-[30px] py-5": size === "medium",
+        "lg:px-[30px] lg:py-5 p-3": size === "medium",
       })}
     >
       {label}

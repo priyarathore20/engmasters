@@ -14,7 +14,7 @@ import Image from "next/image";
 
 const Homepage = () => {
   return (
-    <div className="relative bg-bgGray mt-[90px] w-full overflow-x-hidden">
+    <div className="relative bg-bgGray mt-[63px] lg:mt-[90px] w-full overflow-x-hidden">
       <Header />
       <IntroSection />
       <div className="flex gap-10 section-container">

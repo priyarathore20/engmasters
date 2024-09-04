@@ -7,7 +7,7 @@ import { MdMail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="relative z-[100] flex flex-col justify-between gap-4 bg-bgGray scroll-m-24 px-24 p-8 w-full">
+    <div className="relative z-[100] flex flex-col justify-between gap-4 bg-bgGray scroll-m-24 lg:px-24 p-8 w-full">
       <div className="flex lg:flex-row flex-col justify-between gap-y-10">
         <div className="flex flex-col flex-[0.25] gap-3">
           <Image src="/logo.svg" alt="" width={150} height={20} />

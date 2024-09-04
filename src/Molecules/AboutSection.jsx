@@ -87,12 +87,14 @@ const AboutSection = () => {
             {benefitCards.map((item, i) => (
               <div
                 key={i}
-                className="flex items-center gap-5 shadow-md py-3 pr-8 rounded-xl"
+                className="flex lg:flex-row flex-col items-center gap-5 shadow-md px-5 py-3 rounded-xl"
               >
                 <Image src={item?.image} alt="" width={175} height={140} />
-                <div className="flex flex-col gap-2">
-                  <h4 className="text-darkGray text-xl">{item?.heading}</h4>
-                  <p className="text-lg">{item?.description}</p>
+                <div className="flex flex-col gap-2 text-center lg:text-left">
+                  <h4 className="text-[#586a92] text-xl">{item?.heading}</h4>
+                  <p className="text-[#818184] text-center text-lg lg:text-left">
+                    {item?.description}
+                  </p>
                 </div>
               </div>
             ))}

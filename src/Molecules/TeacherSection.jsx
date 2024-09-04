@@ -53,7 +53,7 @@ const TeacherSection = () => {
               </p>
               <button
                 onClick={() => toggleViewMore(i)}
-                className="xl:block hidden mt-2 text-blue-500 focus:outline-none"
+                className="mt-2 text-blue-500 focus:outline-none"
               >
                 {expandedIndex === i ? "View Less" : "View More"}
               </button>

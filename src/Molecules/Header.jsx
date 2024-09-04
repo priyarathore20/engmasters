@@ -8,10 +8,16 @@ const Header = () => {
   const navLinks = ["Benefits", "Curriculum", "Reviews", "FAQs"];
 
   return (
-    <header className="top-0 z-[100] fixed bg-bgGray w-full">
-      <div className="flex justify-between items-center h-[90px] section-container">
+    <header className="top-0 z-[100] fixed bg-white lg:bg-bgGray w-full">
+      <div className="flex justify-between items-center h-[63px] lg:h-[90px] section-container">
         <div>
-          <Image src="logo.svg" alt="" width={200} height={50} />
+          <Image
+            src="logo.svg"
+            alt=""
+            width={150}
+            height={50}
+            className="lg:w-[200px] object-cover"
+          />
         </div>
         <div className="lg:flex flex-[0.6] justify-end items-center gap-9 hidden">
           <div>
@@ -31,7 +37,10 @@ const Header = () => {
             classname="bg-white text-orange hover:bg-gradient-to-r from-yellow to-orange hover:text-white"
           />
         </div>
-        <IoMenu className="block lg:hidden bg-orange w-10 h-10 text-white" color="white"/>
+        <IoMenu
+          className="block lg:hidden bg-orange rounded-md w-10 h-10 text-white"
+          color="white"
+        />
       </div>
     </header>
   );

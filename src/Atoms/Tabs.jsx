@@ -155,7 +155,7 @@ const CurriculumTabs = () => {
             <div className="flex flex-col gap-5">
               {tab.content.map((item, index) => (
                 <div key={index} className="flex items-center lg:gap-5">
-                  <div className="flex flex-col justify-center items-center gap-1 bg-bgGray/55 rounded-l-[20px] lg:rounded-[20px] w-full max-w-44 h-full">
+                  <div className="flex flex-col justify-center items-center gap-1 bg-bgGray/55 pl-4 rounded-l-[20px] lg:rounded-[20px] w-full max-w-44 h-full text-center">
                     <p className="font-medium text-brown/45 text-xl">
                       {item.day}
                     </p>

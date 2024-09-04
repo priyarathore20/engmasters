@@ -8,24 +8,24 @@ const ConsultationForm = () => {
       <div className="flex flex-col items-start py-8">
         <div className="flex flex-col items-center bg-formPink p-8 rounded-xl w-full max-w-[900px]">
           <div>
-            <h2 className="font-medium text-[40px] text-white">
+            <h2 className="mb-3 font-medium text-center text-white text-xl lg:text-[40px]">
               Get Consulted Today
             </h2>
-            <p className="text-center text-white text-xl">
+            <p className="text-center text-white lg:text-xl">
               Start your journey to a{" "}
               <span className="text-orange">successful</span> <br />&{" "}
               <span className="text-orange">confident</span> life
             </p>
           </div>
           <form className="flex flex-col items-center gap-8 my-8">
-            <div className="flex flex-col gap-8">
-              <div className="flex gap-6">
-                <Input placeholder={"Name*"} />
-                <Input placeholder={"Email*"} />
+            <div className="flex flex-col gap-8 w-full">
+              <div className="flex lg:flex-row flex-col items-center gap-6 w-full">
+                <Input placeholder={"Name*"} fullWidth />
+                <Input placeholder={"Email*"} fullWidth />
               </div>
-              <div className="flex gap-6">
-                <Input placeholder={"Phone Number*"} />
-                <Input placeholder={"Location*"} />
+              <div className="flex lg:flex-row flex-col items-center gap-6 w-full">
+                <Input placeholder={"Phone Number*"} fullWidth />
+                <Input placeholder={"Location*"} fullWidth />
               </div>
               <Input fullWidth placeholder="Share the problem you're facing" />
             </div>
