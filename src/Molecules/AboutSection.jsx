@@ -60,11 +60,11 @@ const AboutSection = () => {
     <section className="bg-bgGray">
       <div className="flex flex-col items-start pt-[60px] pb-8">
         {/*-------Batch Cards section-------*/}
-        <div className="flex gap-5">
+        <div className="gap-5 grid grid-cols-2 xl:grid-cols-4 w-full">
           {aboutCards.map((item, i) => (
             <div
               key={i}
-              className="flex flex-col flex-wrap items-center bg-white p-5 rounded-xl min-w-[210px]"
+              className="flex flex-col items-center bg-white p-5 rounded-xl w-full"
             >
               <Image src={item?.href} alt="" width={50} height={50} />
               <div className="flex flex-col items-center bg-white">

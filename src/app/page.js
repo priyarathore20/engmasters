@@ -17,7 +17,7 @@ export default function Home() {
       <Header />
       <IntroSection />
       <div className="flex gap-10 section-container">
-        <div className="flex-[0.68]">
+        <div className="flex-[0.68] flex flex-col max-lg:items-center max-lg:flex-1">
           <AboutSection />
           <BenefitSection />
           <CurriculumSection />
@@ -27,7 +27,7 @@ export default function Home() {
           <ConsultationForm />
           <LastSection />
         </div>
-        <div className="w-16 flex-[0.32] h-28 bg-black">card</div>
+        <div className="w-16 flex-[0.32] h-28 hidden lg:block bg-black">card</div>
       </div>
 
       <Footer />

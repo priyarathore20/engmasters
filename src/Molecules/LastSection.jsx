@@ -35,7 +35,7 @@ const LastSection = () => {
         <h2 className="mb-8 font-semibold text-[40px] text-brown/55 text-left">
           Who is this for?
         </h2>
-        <div className="gap-5 grid grid-cols-2">
+        <div className="gap-5 grid grid-cols-1 lg:grid-cols-2">
           {infoCard.map((item, i) => (
             <div key={i} className="flex flex-col gap-4">
               <Image src={item?.image} alt="" width={50} height={50} />

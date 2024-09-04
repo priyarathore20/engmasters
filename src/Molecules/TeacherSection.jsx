@@ -29,16 +29,13 @@ const TeacherSection = () => {
 
   return (
     <section className="bg-bgGray scroll-m-24 w-full" id="Benefits">
-      <div className="bg-white p-7 rounded-xl w-full max-w-[900px]">
+      <div className="bg-white p-4 rounded-xl w-full max-w-[900px]">
         <h2 className="mb-3 font-semibold text-[40px] text-brown/65 text-center">
           About the Teachers
         </h2>
-        <div className="flex justify-between mt-7 w-full">
+        <div className="flex xl:flex-row flex-col justify-between items-center gap-y-5 xl:gap-x-4 mt-7 w-full">
           {teachersCard.map((item, i) => (
-            <div
-              key={i}
-              className="flex flex-col items-center gap-5 w-full max-w-64"
-            >
+            <div key={i} className="flex flex-col items-center gap-5 w-full">
               <Image
                 src={item?.image}
                 alt=""
@@ -48,7 +45,7 @@ const TeacherSection = () => {
               />
               <p className="font-medium text-2xl text-brown">{item?.name}</p>
               <p
-                className={`whitespace-pre-wrap ${
+                className={`whitespace-pre-wrap text-center ${
                   expandedIndex === i ? "" : "line-clamp-[11]"
                 }`}
               >
@@ -56,7 +53,7 @@ const TeacherSection = () => {
               </p>
               <button
                 onClick={() => toggleViewMore(i)}
-                className="mt-2 text-blue-500 focus:outline-none"
+                className="xl:block hidden mt-2 text-blue-500 focus:outline-none"
               >
                 {expandedIndex === i ? "View Less" : "View More"}
               </button>

@@ -15,6 +15,11 @@ module.exports = {
         brown: "#c77201",
         darkGray: "#586a92",
         formPink: "#973751",
+        textGray: "#576182",
+      },
+      screens: {
+        lg: "992px",
+        xl: "1024px",
       },
     },
   },

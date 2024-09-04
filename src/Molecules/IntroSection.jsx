@@ -4,10 +4,10 @@ import CountdownTimer from "@/Atoms/Timer";
 const IntroSection = () => {
   return (
     <section className="bg-bgGray">
-      <div className="relative z-50 flex justify-between items-start gap-6 pt-[60px] pb-8 section-container">
+      <div className="relative z-50 flex lg:flex-row flex-col justify-between items-center lg:items-start gap-6 pt-[30px] pb-8 section-container">
         {/*------Intro left part------- */}
-        <div className="flex-[0.5]">
-          <h2 className="font-semibold text-[52px] text-orange uppercase leading-[56px]">
+        <div className="flex flex-col flex-[0.5] max-lg:items-center">
+          <h2 className="font-bold text-[52px] text-orange max-lg:text-center uppercase leading-[56px]">
             English Speaking Institute in Tilak Nagar
           </h2>
           <h5 className="mt-[10px] mb-4 font-medium text-xl">
