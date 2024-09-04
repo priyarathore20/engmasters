@@ -7,7 +7,7 @@ import FaqSection from "@/Molecules/FaqSection";
 import Footer from "@/Molecules/Footer";
 import Header from "@/Molecules/Header";
 import IntroSection from "@/Molecules/IntroSection";
-import LastSection from "@/Molecules/Lastsection";
+import LastSection from "@/Molecules/LastSection";
 import ReviewSection from "@/Molecules/ReviewSection";
 import TeacherSection from "@/Molecules/TeacherSection";
 
