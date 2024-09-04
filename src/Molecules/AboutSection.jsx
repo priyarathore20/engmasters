@@ -57,44 +57,49 @@ const benefitCards = [
 
 const AboutSection = () => {
   return (
-    <div className="bg-bgGray px-24 pt-[60px] pb-8">
-      {/*-------Batch Cards section-------*/}
-      <div className="flex gap-5">
-        {aboutCards.map((item, i) => (
-          <div
-            key={i}
-            className="flex flex-col flex-wrap items-center bg-white p-5 rounded-xl min-w-[210px]"
-          >
-            <Image src={item?.href} alt="" width={50} height={50} />
-            <div className="flex flex-col items-center bg-white">
-              <p className="mt-2 mb-1 w-full max-w-24 text-center">
-                {item?.title}
-              </p>
-              <p className="text-orange">{item?.subtitle1}</p>
-              <p className="text-orange">{item?.subtitle2}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/*-------Why Choose us section-------*/}
-      <div className="bg-white mt-7 p-7 rounded-xl w-full max-w-[900px]">
-        <h2 className="font-semibold text-[40px] text-brown/55">
-          Why Choose Us?
-        </h2>
-        <div className="flex flex-col gap-9 my-7">
-          {benefitCards.map((item, i) => (
-            <div key={i} className="flex items-center gap-5 shadow-md py-3 pr-8 rounded-xl">
-              <Image src={item?.image} alt="" width={175} height={140} />
-              <div className="flex flex-col gap-2">
-                <h4 className="text-darkGray text-xl">{item?.heading}</h4>
-                <p className="text-lg">{item?.description}</p>
+    <section className="bg-bgGray">
+      <div className="flex flex-col items-start pt-[60px] pb-8">
+        {/*-------Batch Cards section-------*/}
+        <div className="flex gap-5">
+          {aboutCards.map((item, i) => (
+            <div
+              key={i}
+              className="flex flex-col flex-wrap items-center bg-white p-5 rounded-xl min-w-[210px]"
+            >
+              <Image src={item?.href} alt="" width={50} height={50} />
+              <div className="flex flex-col items-center bg-white">
+                <p className="mt-2 mb-1 w-full max-w-24 text-center">
+                  {item?.title}
+                </p>
+                <p className="text-orange">{item?.subtitle1}</p>
+                <p className="text-orange">{item?.subtitle2}</p>
               </div>
             </div>
           ))}
         </div>
+
+        {/*-------Why Choose us section-------*/}
+        <div className="bg-white mt-7 p-7 rounded-xl w-full max-w-[900px]">
+          <h2 className="font-semibold text-[40px] text-brown/55">
+            Why Choose Us?
+          </h2>
+          <div className="flex flex-col gap-9 my-7">
+            {benefitCards.map((item, i) => (
+              <div
+                key={i}
+                className="flex items-center gap-5 shadow-md py-3 pr-8 rounded-xl"
+              >
+                <Image src={item?.image} alt="" width={175} height={140} />
+                <div className="flex flex-col gap-2">
+                  <h4 className="text-darkGray text-xl">{item?.heading}</h4>
+                  <p className="text-lg">{item?.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

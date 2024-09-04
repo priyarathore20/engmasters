@@ -28,7 +28,7 @@ const TeacherSection = () => {
   };
 
   return (
-    <div className="bg-bgGray scroll-m-24 px-24 w-full" id="Benefits">
+    <section className="bg-bgGray scroll-m-24 w-full" id="Benefits">
       <div className="bg-white p-7 rounded-xl w-full max-w-[900px]">
         <h2 className="mb-3 font-semibold text-[40px] text-brown/65 text-center">
           About the Teachers
@@ -64,7 +64,7 @@ const TeacherSection = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

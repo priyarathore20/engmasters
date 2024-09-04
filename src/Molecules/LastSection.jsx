@@ -30,7 +30,7 @@ const infoCard = [
 
 const LastSection = () => {
   return (
-    <div className="bg-bgGray px-24 py-8 w-full">
+    <section className="bg-bgGray py-8 w-full">
       <div className="bg-white p-7 rounded-xl w-full max-w-[900px]">
         <h2 className="mb-8 font-semibold text-[40px] text-brown/55 text-left">
           Who is this for?
@@ -47,7 +47,7 @@ const LastSection = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

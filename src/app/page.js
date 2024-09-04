@@ -13,17 +13,23 @@ import TeacherSection from "@/Molecules/TeacherSection";
 
 export default function Home() {
   return (
-    <div className="h-screen w-screen overflow-x-hidden">
+    <div className="h-screen w-screen overflow-x-hidden mt-[90px] bg-bgGray">
       <Header />
       <IntroSection />
-      <AboutSection />
-      <BenefitSection />
-      <CurriculumSection />
-      <TeacherSection />
-      <ReviewSection />
-      <FaqSection />
-      <ConsultationForm />
-      <LastSection />
+      <div className="flex gap-10 section-container">
+        <div className="flex-[0.68]">
+          <AboutSection />
+          <BenefitSection />
+          <CurriculumSection />
+          <TeacherSection />
+          <ReviewSection />
+          <FaqSection />
+          <ConsultationForm />
+          <LastSection />
+        </div>
+        <div className="w-16 flex-[0.32] h-28 bg-black">card</div>
+      </div>
+
       <Footer />
     </div>
   );
